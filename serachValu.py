@@ -50,8 +50,8 @@ class Category():
                 coinprism = snsUrl
             else:
                 homepage = snsUrl
-            info = (valuerName, self.categoryName, twitter, instagram, facebook, homepage, coinprism)
-            # self.db_connector.insertUserInfomation(info)
+        info = (valuerName, self.categoryName, twitter, instagram, facebook, homepage, coinprism)
+        self.db_connector.insertUserInfomation(info)
 
 class ValuCollector():
     def __init__(self):
